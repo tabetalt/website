@@ -34,9 +34,9 @@
 
 <style>
 	:global(:root) {
-		--color-primary: #F47F5E;
-    --color-background: #E9EBF1;
-    --color-text: #000;
+		--color-primary: #f47f5e;
+		--color-background: #e9ebf1;
+		--color-text: #000;
 	}
 
 	:global(body) {

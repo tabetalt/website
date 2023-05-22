@@ -1,0 +1,42 @@
+{
+	"name": "website",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"packageManager": "pnpm@8.5.0",
+	"scripts": {
+		"build": "vite build",
+		"postbuild": "svelte-sitemap --domain https://tabetalt.no",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"dev": "vite dev",
+		"format": "prettier --plugin-search-dir . --write .",
+		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+		"preview": "vite preview",
+		"test": "playwright test",
+		"test:unit": "vitest"
+	},
+	"dependencies": {
+		"@fontsource/poppins": "^5.0.0",
+		"@sveltejs/adapter-static": "^2.0.2",
+		"schema-dts": "^1.1.2"
+	},
+	"devDependencies": {
+		"@playwright/test": "^1.34.0",
+		"@sveltejs/adapter-auto": "^2.1.0",
+		"@sveltejs/kit": "^1.18.0",
+		"eslint": "^8.41.0",
+		"eslint-config-prettier": "^8.8.0",
+		"eslint-plugin-svelte3": "^4.0.0",
+		"lint-staged": "^13.2.2",
+		"prettier": "^2.8.8",
+		"prettier-plugin-svelte": "^2.10.0",
+		"svelte": "^3.59.1",
+		"svelte-check": "^3.3.2",
+		"svelte-sitemap": "^2.6.0",
+		"tslib": "^2.5.2",
+		"typescript": "^5.0.4",
+		"vite": "^4.3.8",
+		"vitest": "^0.31.1"
+	}
+}

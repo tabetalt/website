@@ -6,7 +6,10 @@
 	<div class="logo">
 		<Logo />
 	</div>
-	<p>Organisasjonsnummer: 920 654 517</p>
+	<p>
+		En tjeneste lagd av
+		<a href="https://www.bjerk.io">Bjerk</a>
+	</p>
 </div>
 
 <style>
